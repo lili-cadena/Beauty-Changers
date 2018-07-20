@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #ffffff;">
+      <a class="navbar-brand" href="/categories">
+      <img src="https://mail.google.com/mail/u/0/?ui=2&ik=b1b74d1bb4&view=att&th=164b1d26fd94f30f&attid=0.1&disp=safe&realattid=f_jjscb4ev1&zw" width="35" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/categories" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/blush">Blush</a>
+              <a class="dropdown-item" href="/bronzer">Bronzer</a>
+              <a class="dropdown-item" href="/eyeliner">Eyeliner</a>
+              <a class="dropdown-item" href="/eyeshadow">Eyeshadow</a>
+              <a class="dropdown-item" href="/foundation">Foundation</a>
+              <a class="dropdown-item" href="/lipLiner">Lip liner</a>
+              <a class="dropdown-item" href="/lipStick">Lipstick</a>
+              <a class="dropdown-item" href="/mascara">Mascara</a>
+              <a class="dropdown-item" href="/nailPolish">Nail Polish</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/checkout">Shopping Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+</br>
+
+<section class="cart product">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{image_link}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <h5 class="card-title" style="color:red">${{price}}</h5>
+    <p class="card-text">Brand: {{brand}}</p>
+    <p class="card-text">Type: {{category}}</p>
+    <p class="card-text">Properties: {{tag_list}}</p>
+    
+    <form validated action="/cart/{{id}}" method="POST">
+        <p>
+            <input type="hidden" name="sku" value="{{id}}" required>
+        </p>
+        <p>
+            <input type="hidden" name="name" value="{{name}}" required>
+        </p>
+        <p>
+            <input type="hidden" name="image" value="{{image_link}}" required>
+        </p>
+        <p>
+            <input type="hidden" name="price" value="{{price}}" required>
+        </p>
+        <p>
+            Quantity:
+            <input type="number" name="quantity" min="1" value="{{quantity}}"required>
+        </p>
+        <input type="submit" class="btn btn-primary" value="Add to cart">
+    </form>
+  </div>
+</div>
+</section>

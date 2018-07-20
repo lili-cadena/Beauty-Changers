@@ -1,0 +1,29 @@
+
+<body class="background">
+    <img class="logoSignup" src="https://res.cloudinary.com/dzt4wkac0/image/upload/v1532046588/logo.png">
+    <form validated class="form-group signup" action="/signup" method="post">
+        <div class="contsig">
+            <h1 class="titlesig">Create account</h1>
+            {{#if error}}
+                <div class="alert alert-danger" role="alert">
+                {{error}}
+                </div>
+            {{/if}}
+            <p>
+                <input value= "{{username}}" type="text" name="username" placeholder="Your name" class="form-control" required>
+            </p>
+            <p>
+                <input value= "{{email}}" type="email" name="email" placeholder="Email" class="form-control" required>
+            </p>
+            <p>
+                <input type="password" name="password" placeholder="Password" class="form-control" required>
+            </p>
+            <p>
+                <input type="password" name="password2" placeholder="Re-enter password" class="form-control" required>
+            </p>
+            <button type="submit" class="btn btn-success btnsigin">Continue</button>
+            </br>
+            <a href="/login" class="loginuser">Already have an account?</a>
+        </div>
+    </form>
+</body>

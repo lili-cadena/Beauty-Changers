@@ -1,0 +1,127 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: black; }
+
+.background {
+  background-image: url("https://res.cloudinary.com/dzt4wkac0/image/upload/v1532046579/4062.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.signup {
+  position: absolute;
+  align-items: center;
+  margin-left: 36%;
+  margin-top: 4.5%;
+  background: white;
+  padding: 9% 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.contsig {
+  margin-top: 9%; }
+
+.logoSignup {
+  position: absolute;
+  width: 90px;
+  height: 100px;
+  padding: 0;
+  margin-left: 45%;
+  margin-top: 6.5%;
+  z-index: 999; }
+
+.titlesig {
+  font-family: 'Anton', sans-serif;
+  text-align: center; }
+
+.btnsigin {
+  margin-left: 30%; }
+
+.loginuser {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 7%; }
+
+.login {
+  position: absolute;
+  margin-left: 37%;
+  margin-top: 10%;
+  background: white;
+  padding: 5% 4%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.contlog {
+  margin-top: 50%; }
+
+.logoLogin {
+  position: absolute;
+  width: 90px;
+  height: 100px;
+  padding: 0;
+  margin-left: 44.5%;
+  margin-top: 12%;
+  z-index: 999; }
+
+.titlelog {
+  font-family: 'Anton', sans-serif;
+  text-align: center; }
+
+.btnlogin {
+  margin-left: 25%; }
+
+.createUser {
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 9%; }
+
+.navbar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.cat {
+  font-family: 'Anton', sans-serif; }
+
+.itemCart {
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 550px;
+  margin-left: 5%;
+  margin-top: 2%;
+  padding: 1%; }
+
+.imgCart {
+  width: 50px;
+  height: 50px; }
+
+.productos {
+  padding: 50px; }
+
+.tarjeta {
+  width: 100px;
+  height: 500px; }
+
+.cart {
+  padding: 10px; }
+
+.categories {
+  padding: 20px; }
+
+.continue {
+  margin-left: 200px;
+  padding: 10px; }
+
+.product {
+  padding: 50px; }
+
+.checkout {
+  position: absolute;
+  margin: 50px; }
+
+.finalForm {
+  position: absolute;
+  margin-left: 750px;
+  width: 300px; }
+
+/*# sourceMappingURL=style.css.map */
